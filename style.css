@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 @font-face {
 	font-family: 'Bebas Neue Regular';
 	src: url('./fonts/BebasNeueRegular.woff') format('woff');
@@ -46,7 +50,7 @@ header {
 	display: flex;
 	align-items: center;
 	color: rgb(204, 211, 218);
-	height: 94px;
+	height: 5.875rem;
 	position: fixed;
 	z-index: 2;
 	width: 100%;
@@ -60,68 +64,65 @@ header {
 	color: #222427;
 	font-weight: 600;
 	background-color: #a8acafd2;
-	height: 74px;
+	height: 4.625rem;
 }
 
 .logo-link {
-	padding: 0px 50px;
+	padding: 0px 3.125rem;
 	border-right: 1px solid rgba(235, 235, 240, 0.20);
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
-
-.hidden {
-	display: none;
-	opacity: 0;
-}
-
 .header-nav {
 	flex-basis: 90%;
 	display: flex;
 	list-style: none;
 }
 
+.nav-item:not(:last-child) {
+	margin-right: 1.875rem;
+
+}
+
 .header-link {
 	font-family: 'Noto Sans';
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 1rem;
 	flex-shrink: 0px;
-	margin-right: 30px;
 	color: inherit;
-	padding-left: 18px;
 }
 
 .block-phone {
 	flex-shrink: 0;
 	display: flex;
-	gap: 10px;
+	gap: .625rem;
 	align-items: center;
 	text-decoration: none;
-	margin-right: 50px;
+	margin-right: 3.125rem;
 }
 
 .number-phone {
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 1rem;
 	color: inherit;
 }
 
 .button {
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 	background: #3A71D1;
 	color: #FFF;
-	padding: 24px 51px;
+	padding: 1.5rem 3.1875rem;
 	border: none;
 }
 
 .button-getConsulting {
 	font-family: 'Noto Sans';
-	padding-left: 49px;
+	padding-left: 3.0625rem;
 	flex-shrink: 0;
 	height: 100%;
-	gap: 10px;
+	gap: .625rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -129,124 +130,121 @@ header {
 }
 
 .container {
-	max-width: 1440px;
+	max-width: 90rem;
 	margin-left: 240px;
 }
 
 .header-content {
-	padding-top: 169px;
+	padding-top: 10.5625rem;
 	position: relative;
 	z-index: 1;
 	color: #FFF;
 }
 
 .header-line-separiton {
-	width: 150px;
-	height: 2px;
+	width: 9.375rem;
+	height: .125rem;
 	background: var(--main, #5C8EE5);
 }
 
 .header-title {
-	margin-top: 26px;
-	max-width: 1080px;
-	font-size: 80px;
+	margin-top: 1.625rem;
+	max-width: 67.5rem;
+	font-size: 5rem;
 	font-weight: 400;
 	font-family: 'Bebas Neue Regular';
-	letter-spacing: 0.1px;
-	word-spacing: -0.4px;
+	letter-spacing: .0063rem;
+	word-spacing: -0.025rem;
 }
 
 .header-text {
-	margin: -10px 0px;
-	max-width: 720px;
+	margin: -0.625rem 0rem;
+	max-width: 45rem;
 	font-family: Noto Sans;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 160%;
 }
 
 .button-company {
-	margin: 60px 1px;
-	padding: 0px 60px;
+	margin: 3.75rem .0625rem;
+	padding: 0rem 3.75rem;
 	cursor: pointer;
-	height: 76px;
+	height: 4.75rem;
 }
 
 .header-privileges {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	padding: 0px;
-	min-height: 168px;
-	margin-top: 41px;
+	padding: 0rem;
+	min-height: 10.5rem;
+	margin-top: 2.5625rem;
 }
 
 .header-priveleges-item {
-	border: 1px solid rgba(235, 235, 240, 0.20);
+	border: .0625rem solid rgba(235, 235, 240, 0.20);
 	list-style: none;
-	padding: 21px 51px;
-	width: 288px;
+	padding: 1.3125rem 3.1875rem;
+	width: 18rem;
 }
 
 .header-priveleges-item:not(:last-child) {
 	border-right: none;
 }
 
-.header-priveleges-img {
-	/* margin: 30px 0px 0px 50px; */
-}
-
 .header-priveleges-text {
 	font-family: "Noto Sans";
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 300;
 	line-height: 160%;
 	color: #FFF;
 	/* margin: 0px 0px 30px 50px; */
 	max-width: 100%;
-	margin-bottom: 0px;
-    margin-top: 22px;
+	margin-bottom: 0rem;
+	margin-top: 1.375rem;
 }
 
 .section {
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 9.375rem;
+	margin-bottom: 9.375rem;
 }
 
 .separation {
-	width: 150px;
-	height: 2px;
+	width: 9.375rem;
+	height: .125rem;
 	background: var(--main, #5C8EE5);
-	margin-top: -1px;
+	margin-top: -0.0625rem;
 }
 
 .work-title {
 	font-family: 'Bebas Neue Regular';
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-weight: 400;
 	color: #292D33;
-	margin-top: 26px;
-	line-height: 118%; /* 72px */
+	margin-top: 1.625rem;
+	line-height: 118%;
+	/* 72px */
 }
 
 .work-item {
 	list-style: none;
 	display: flex;
 	padding: 0;
-	gap: 30px;
+	gap: 1.875rem;
 }
 
 .steps-item {
-	max-width: 330px;
+	max-width: 20.625rem;
 }
 
 .work-number-item {
 	color: var(--main, #5C8EE5);
 	font-family: 'Bebas Neue Regular';
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: 400;
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
 	display: flex;
 	align-items: center;
 }
@@ -254,28 +252,28 @@ header {
 .work-number-item::after {
 	content: "";
 	width: 100%;
-	height: 1px;
+	height: .0625rem;
 	background: var(--sep, #EBEBF0);
 	display: flex;
-	margin-left: 30px;
+	margin-left: 1.875rem;
 }
 
 .work-title-item {
 	color: var(--txt, #292D33);
 	font-family: 'Noto Sans';
-	font-size: 28px;
+	font-size: 1.75rem;
 	font-weight: 400;
-	margin-bottom: 5px;
-	padding-top: 10px;
-    letter-spacing: 1.26px;
-    line-height: 152%;
+	margin-bottom: .3125rem;
+	padding-top: .625rem;
+	letter-spacing: .0788rem;
+	line-height: 152%;
 }
 
 .work-text-item {
 	margin-top: 5px;
 	color: var(--txt2, #828A99);
 	font-family: 'Noto Sans';
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 400;
 	line-height: 160%
 }
@@ -285,23 +283,174 @@ header {
 	align-items: center;
 	color: var(--main, #5C8EE5);
 	font-family: 'Noto Sans';
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 	text-decoration: none;
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 .step-link::before {
 	content: '';
-	width: 40px;
-	height: 1px;
+	width: 2.5rem;
+	height: .0625rem;
 	background: var(--main, #5C8EE5);
-	margin-right: 20px;
+	margin-right: 1.25rem;
 }
 
-/* static - элемент позиционируется относительно родителя и соседних элементов
+@media (max-width : 1920px) {
+	.container {
+		max-width: 89rem;
+		margin-left: 278px;
+	}
+}
+
+
+@media (max-width : 1720px) {
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+		max-width: 80rem;
+		margin-left: 205px;
+	}
+
+	.header-image {
+		background-position: center;
+	}
+
+	.logo-img-ligh {
+		max-width: 8rem;
+	}
+}
+
+@media (max-width : 1450px) {
+	html {
+		font-size: 13px;
+
+	}
+
+	.container {
+		max-width: 85rem;
+		margin-left: 134px;
+	}
+
+	header.header-image {
+		background-position: center;
+	}
+
+	.logo-link {
+		padding: 2rem;
+	}
+
+	.logo-img-ligh {
+		max-width: 6rem;
+	}
+
+	.header-nav {
+		padding-left: 2rem;
+	}
+
+	.nav-item:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	.header-image {
+		background-position: center;
+	}
+
+	.block-phone {
+		margin-right: 2.2rem;
+	}
+}
+
+@media (max-width : 1200px) {
+	.container {
+		max-width: 62rem;
+		margin-left: 154px;
+	}
+
+	header.header-image {
+		background-position: center;
+	}
+
+	.block-phone {
+		display: none;
+	}
+
+	.navbar {
+		height: 5rem;
+	}
+
+	.button-getConsulting {
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+
+}
+
+@media (max-width : 992px) {
+	html {
+		font-size: 12px;
+	}
+
+	.container {
+		max-width: 55rem;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.logo-link {
+		flex-grow: 1;
+		justify-content: center;
+	}
+
+	.mobail-menu-toggle {
+		display: flex;
+		width: 80px;
+		height: 100%;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 22px 27px 22px 28px;
+		border-right: 1px solid rgba(235, 235, 240, 0.20);
+
+	}
+
+	.mobail-menu-line {
+		height: 1px;
+		background-color: rgb(221, 217, 210);
+		max-width: 100%;
+
+	}
+
+	.mobail-menu-line:nth-child(2) {
+		max-width: 88%;
+	}
+}
+
+
+
+
+/*static - элемент позиционируется относительно родителя и соседних элементов
 relative - элемент позиционируется как static но можно двигать его относительно своего положения
 absolute - элемент позиционируется относительно ближайшего родителя с relative, absolute, fixed и sticky
 fixed - элемент позиционируется относительно окна браузера
 sticky - элемент позиционируется как static но когда верхняя граница элемента будет находиться на расстоянии, указанном в параметре top, от верхней границы окна браузера, он останется в этом положении относительно окна до тех пор пока его нижняя граница не упрется в другой sticky элемент или конец родительского элемента
 inherit - берет значение от родителя */
+
+/* 
+Стратегии использования медиа-запросов
+Для создания дизайна, позволяющего лучшим образом отображать сайт на различных устройствах, используют общие стратегии медиа-запросов:
+1) Уменьшение количества колонок (столбцов) и постепенная отмена обтекания для мобильных устройств.
+2) Использование свойства max-width вместо width при задании ширины блока-контейнера.
+3) Уменьшение полей и отступов на мобильных устройствах (например, нижних отступов между заголовком и текстом, левого отступа для списков и т.п.).
+4) Уменьшение размеров шрифтов для мобильных устройств.
+5) Превращение линейных навигационных меню в раскрывающиеся.
+6) Скрытие второстепенного содержимого на мобильных устройствах с помощью display: none.
+7) Подключение фоновых изображений уменьшенных размеров. */
