@@ -18,7 +18,9 @@ body {
 	position: relative;
 }
 
-
+.mobail-menu {
+	display: none;
+}
 
 header.header-image {
 	background-image: url(./img/badroundImage.jpg);
@@ -74,6 +76,7 @@ header {
 	display: flex;
 	align-items: center;
 }
+
 .header-nav {
 	flex-basis: 90%;
 	display: flex;
@@ -100,6 +103,7 @@ header {
 	align-items: center;
 	text-decoration: none;
 	margin-right: 3.125rem;
+	fill: #5C8EE6;
 }
 
 .number-phone {
@@ -126,7 +130,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
 
+/* .button-getConsulting .button-phone {
+	display: none;
+} */
+
+.icon-button-phone {
+	display: none;
 }
 
 .container {
@@ -135,7 +146,7 @@ header {
 }
 
 .header-content {
-	padding-top: 10.5625rem;
+	padding-top: 150px;
 	position: relative;
 	z-index: 1;
 	color: #FFF;
@@ -200,7 +211,6 @@ header {
 	font-weight: 300;
 	line-height: 160%;
 	color: #FFF;
-	/* margin: 0px 0px 30px 50px; */
 	max-width: 100%;
 	margin-bottom: 0rem;
 	margin-top: 1.375rem;
@@ -225,7 +235,6 @@ header {
 	color: #292D33;
 	margin-top: 1.625rem;
 	line-height: 118%;
-	/* 72px */
 }
 
 .work-item {
@@ -262,7 +271,7 @@ header {
 	color: var(--txt, #292D33);
 	font-family: 'Noto Sans';
 	font-size: 1.75rem;
-	font-weight: 400;
+	font-weight: 600;
 	margin-bottom: .3125rem;
 	padding-top: .625rem;
 	letter-spacing: .0788rem;
@@ -299,8 +308,9 @@ header {
 
 @media (max-width : 1920px) {
 	.container {
-		max-width: 89rem;
-		margin-left: 278px;
+		max-width: 1424px;
+		margin-left: 241px;
+		margin-right: 131px;
 	}
 }
 
@@ -311,8 +321,9 @@ header {
 	}
 
 	.container {
-		max-width: 80rem;
+		max-width: 1280px;
 		margin-left: 205px;
+		margin-right: 100px;
 	}
 
 	.header-image {
@@ -322,17 +333,25 @@ header {
 	.logo-img-ligh {
 		max-width: 8rem;
 	}
+	.header-content {
+		padding-top: 114px;
+	}
 }
 
-@media (max-width : 1450px) {
+@media (max-width : 1471px) {
 	html {
-		font-size: 13px;
+		font-size: 12px;
 
 	}
 
 	.container {
-		max-width: 85rem;
-		margin-left: 134px;
+		max-width: 1216px;
+		margin-left: 121px;
+		margin-right: 121px;
+	}
+
+	.header-content {
+		padding-top: 104px;
 	}
 
 	header.header-image {
@@ -343,7 +362,7 @@ header {
 		padding: 2rem;
 	}
 
-	.logo-img-ligh {
+	.logo-img-light {
 		max-width: 6rem;
 	}
 
@@ -364,20 +383,19 @@ header {
 	}
 }
 
-@media (max-width : 1200px) {
+@media (max-width : 1279px) {
 	.container {
-		max-width: 62rem;
-		margin-left: 154px;
+		max-width: 1056px;
+		margin-left: 120px;
+		margin-right: 120px;
 	}
 
 	header.header-image {
 		background-position: center;
 	}
-
-	.block-phone {
-		display: none;
+	.header-content {
+		padding-top: 94px;
 	}
-
 	.navbar {
 		height: 5rem;
 	}
@@ -387,15 +405,340 @@ header {
 		padding-left: 2rem;
 	}
 
+	.header-nav {
+		padding-left: 1rem;
+	}
+
+	.header-priveleges-item {
+		padding: 1rem 0.8rem;
+	}
+
+	.nav-item:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	.icon-clock {
+		max-width: 3.0rem;
+	}
+
+	.icon-file {
+		max-width: 3.0rem;
+	}
+
+	.icon-user {
+		max-width: 3.0rem;
+	}
+
+	.icon-logistick {
+		max-width: 3.0rem;
+	}
+
+	.icon-speed {
+		max-width: 3.0rem;
+	}
+
 }
 
-@media (max-width : 992px) {
+@media (max-width : 1146px) {
 	html {
-		font-size: 12px;
+		font-size: 11px;
 	}
 
 	.container {
-		max-width: 55rem;
+		max-width: 861.6px;
+		margin-left: 78px;
+		margin-right: 78px;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+	.header-content {
+		padding-top: 54px;
+	}
+	.navbar-scroll {
+		font-weight: 500;
+	}
+
+	.logo-link {
+		padding: 1rem;
+	}
+
+	.logo-img-light {
+		max-width: 5rem;
+	}
+
+	.button-getConsulting {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.icon-phone {
+		max-width: 2rem;
+	}
+
+	.block-phone {
+		margin-right: 1.1rem;
+	}
+
+	.nav-item:not(:last-child) {
+		margin-right: 0.5rem;
+	}
+
+	.icon-clock {
+		max-width: 2.5rem;
+	}
+
+	.icon-file {
+		max-width: 2.5rem;
+	}
+
+	.icon-user {
+		max-width: 2.5rem;
+	}
+
+	.icon-logistick {
+		max-width: 2.5rem;
+	}
+
+	.icon-speed {
+		max-width: 2.5rem;
+	}
+}
+
+@media (max-width : 884px) {
+	html {
+		font-size: 9px;
+	}
+
+	.container {
+		max-width: 802.6px;
+		margin-left: 55px;
+		margin-right: 55px;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+
+	.header-content {
+		padding-top: 34px;
+	}
+
+	.logo-link {
+		padding: 0.8rem;
+	}
+
+	.logo-img-light {
+		max-width: 4.5rem;
+	}
+
+	.header-nav {
+		padding-left: 0.6rem;
+	}
+
+	.button-getConsulting {
+		padding-right: 0.8rem;
+		padding-left: 0.8rem;
+		font-size: 9px;
+	}
+
+	.block-phone {
+		margin-right: 0.8rem;
+	}
+
+	.navbar-scroll {
+		font-weight: 500;
+	}
+
+	.header-title {
+		font-size: 4rem;
+	}
+
+	.icon-clock {
+		max-width: 2.4rem;
+	}
+
+	.icon-file {
+		max-width: 2.4rem;
+	}
+
+	.icon-user {
+		max-width: 2.4rem;
+	}
+
+	.icon-logistick {
+		max-width: 2.4rem;
+	}
+
+	.icon-speed {
+		max-width: 2.4rem;
+	}
+}
+
+@media (max-width : 710px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		max-width: 586px;
+		margin-left: 49px;
+		margin-right: 49px;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+	.header-content {
+		padding-top: 24px;
+	}
+	.header-text  {
+		font-size: 1.5rem;
+	}
+	.work-text-item {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #2e2f31;
+	}
+	.button-company {
+		font-size: 7px;
+	}
+	.button-getConsulting {
+		padding-right: 0.6rem;
+		padding-left: 0.6rem;
+		font-size: 7px;
+	}
+	.header-nav {
+		padding-left: 0.4rem;
+	}
+	.block-phone {
+		margin-right: 0.5rem;
+	}
+	.header-title {
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width : 606px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		max-width: 586px;
+		margin-left: 49px;
+		margin-right: 49px;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+	.header-content {
+		padding-top: 8px;
+	}
+	.header-text  {
+		font-size: 1.5rem;
+	}
+	.work-text-item {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #2e2f31;
+	}
+	.logo-img-light {
+		max-width: 4.1rem;
+	}
+	.button-company {
+		font-size: 7px;
+	}
+	.button-getConsulting {
+		padding-right: 0.4rem;
+		padding-left: 0.4rem;
+		font-size: 6px;
+	}
+	.block-phone {
+		display: none;
+	}
+	.header-nav {
+		padding-left: 0.4rem;
+	}
+	.block-phone {
+		margin-right: 0.5rem;
+	}
+	.header-title {
+		font-size: 3.2rem;
+	}
+	.work-title {
+		font-size: 3.05rem;
+	}
+}
+@media (max-width : 523px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		max-width: 431px;
+		margin-left: 34px;
+		margin-right: 34px;
+	}
+
+	header.header-image {
+		background-position: center bottom 0px;
+	}
+	.header-content {
+		padding-top: 0px;
+	}
+	.header-text  {
+		font-size: 1.5rem;
+	}
+	.work-text-item {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #2e2f31;
+	}
+
+	.logo-img-light {
+		max-width: 4.1rem;
+	}
+	.button-company {
+		font-size: 7px;
+		margin-bottom: -3rem;
+	}
+
+	.button-getConsulting {
+		padding-right: 0.4rem;
+		padding-left: 0.4rem;
+		font-size: 6px;
+	}
+	.header-nav {
+		padding-left: 0.4rem;
+	}
+	.block-phone {
+		margin-right: 0.5rem;
+	}
+	.header-title {
+		font-size: 3.2rem;
+	}
+	.work-title {
+		font-size: 2.85rem;
+	}
+	.header-privileges {
+		margin-top: 7.6625rem;
+	}
+	.header-priveleges-item {
+		padding: 0.2rem 0.8rem;
+	}
+	.header-priveleges-text {
+		margin-top: -0.625rem;
+	}
+}
+@media (max-width : 493px) {
+	html {
+		font-size: 8px;
+	}
+
+	.container {
+		max-width: 431px;
+		margin-left: 34px;
+		margin-right: 34px;
 	}
 
 	header.header-image {
@@ -407,33 +750,131 @@ header {
 	}
 
 	.logo-link {
+		padding: 2rem;
 		flex-grow: 1;
 		justify-content: center;
 	}
-
+	.logo-img-light {
+		max-width: 7rem;
+	}
+	
+	.button-company {
+		font-size: 7px;
+		margin-bottom: -3rem;
+		margin-top: 16px;
+	}
+	.header-privileges {
+		margin-top: 4.6625rem;
+	}
 	.mobail-menu-toggle {
 		display: flex;
-		width: 80px;
-		height: 100%;
+		align-items: flex-start;
 		justify-content: space-between;
 		flex-direction: column;
-		padding: 22px 27px 22px 28px;
+		width: 80px;
+		height: 100%;
 		border-right: 1px solid rgba(235, 235, 240, 0.20);
+		padding: 1.5rem 3.5rem;
+	} 
 
-	}
-
-	.mobail-menu-line {
+	 .mobail-menu-line {
 		height: 1px;
-		background-color: rgb(221, 217, 210);
-		max-width: 100%;
-
+		background-color: #fff;
+		width: 100%;
 	}
-
 	.mobail-menu-line:nth-child(2) {
-		max-width: 88%;
+		width: 80%;
+	}
+	.button-getConsulting {
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+	.button-getConsulting .icon-button-phone {
+		display: block;
+		fill: #FFFFFF;
+		width: 18px;
+		height: 18px;
+	}
+	.button-getConsulting .button-text {
+		display: none;
+	}
+	.section .container {
+		max-width: 396px;
+		margin-left: 34px;
+		margin-right: 34px;
+	}
+	.steps-item {
+		max-width: 11rem;
+	}
+	.work-title-item {
+		font-size: 1.55em;
 	}
 }
 
+@media (max-width : 437px) {
+	html {
+		font-size: 8px;
+	}
+	
+	.section .container {
+		max-width: 369px;
+		margin-left: 28px;
+		margin-right: 34px;
+	}
+	.work-item {
+		gap: 1.9345rem;
+	}
+	.steps-item {
+		max-width: 10rem;
+	}
+
+	.work-text-item {
+		font-size: 8px;
+	}
+	.work-number-item {
+		margin-bottom: -1rem
+	}
+	.work-title-item {
+		font-size: 1.35rem;
+
+	}
+}
+@media (max-width : 400px) {
+	html {
+		font-size: 8px;
+	}
+	.section  {
+		margin-top: 6.25rem;
+	}
+
+	.section .container {
+		max-width: 338px;
+		margin-left: 20px;
+		margin-right: 34px;
+	}
+	.work-item {
+		gap: 1.9345rem;
+		margin-top: 0rem;
+	}
+	.steps-item {
+		max-width: 10rem;
+	}
+	.work-title {
+		font-size: 2.55rem;
+		margin-top: 1.25rem;
+		margin-bottom: 1.875rem;
+	}	
+	.work-text-item {
+		font-size: 8px;
+	}
+	.work-number-item {
+		/* margin-bottom: -1rem */
+	}
+	.work-title-item {
+		font-size: 1.35rem;
+		margin-top: .625rem;
+	}
+}
 
 
 
