@@ -1,4 +1,6 @@
+const navbar = () => {
 const navbar = document.querySelector('.navbar');
+
 window.addEventListener('scroll', () => {
 const scrollTopPosition = window.scrollY
 const svgLogo = document.querySelector('.logo-img-light>use')
@@ -18,3 +20,5 @@ if( scrollTopPosition > 150) {
 }
 })
 
+}
+export default navbar

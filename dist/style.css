@@ -333,6 +333,7 @@ header {
 	.logo-img-ligh {
 		max-width: 8rem;
 	}
+
 	.header-content {
 		padding-top: 114px;
 	}
@@ -393,9 +394,11 @@ header {
 	header.header-image {
 		background-position: center;
 	}
+
 	.header-content {
 		padding-top: 94px;
 	}
+
 	.navbar {
 		height: 5rem;
 	}
@@ -453,9 +456,11 @@ header {
 	header.header-image {
 		background-position: center bottom 0px;
 	}
+
 	.header-content {
 		padding-top: 54px;
 	}
+
 	.navbar-scroll {
 		font-weight: 500;
 	}
@@ -580,6 +585,7 @@ header {
 	html {
 		font-size: 8px;
 	}
+
 	.container {
 		max-width: 586px;
 		margin-left: 49px;
@@ -589,31 +595,39 @@ header {
 	header.header-image {
 		background-position: center bottom 0px;
 	}
+
 	.header-content {
 		padding-top: 24px;
 	}
-	.header-text  {
+
+	.header-text {
 		font-size: 1.5rem;
 	}
+
 	.work-text-item {
 		font-size: 1.1rem;
 		font-weight: 600;
 		color: #2e2f31;
 	}
+
 	.button-company {
 		font-size: 7px;
 	}
+
 	.button-getConsulting {
 		padding-right: 0.6rem;
 		padding-left: 0.6rem;
 		font-size: 7px;
 	}
+
 	.header-nav {
 		padding-left: 0.4rem;
 	}
+
 	.block-phone {
 		margin-right: 0.5rem;
 	}
+
 	.header-title {
 		font-size: 3.5rem;
 	}
@@ -623,6 +637,7 @@ header {
 	html {
 		font-size: 8px;
 	}
+
 	.container {
 		max-width: 586px;
 		margin-left: 49px;
@@ -632,48 +647,61 @@ header {
 	header.header-image {
 		background-position: center bottom 0px;
 	}
+
 	.header-content {
 		padding-top: 8px;
 	}
-	.header-text  {
+
+	.header-text {
 		font-size: 1.5rem;
 	}
+
 	.work-text-item {
 		font-size: 1.1rem;
 		font-weight: 600;
 		color: #2e2f31;
 	}
+
 	.logo-img-light {
 		max-width: 4.1rem;
 	}
+
 	.button-company {
 		font-size: 7px;
 	}
+
 	.button-getConsulting {
 		padding-right: 0.4rem;
 		padding-left: 0.4rem;
 		font-size: 6px;
 	}
+
 	.block-phone {
 		display: none;
 	}
+
 	.header-nav {
 		padding-left: 0.4rem;
 	}
+
 	.block-phone {
 		margin-right: 0.5rem;
 	}
+
 	.header-title {
 		font-size: 3.2rem;
 	}
+
 	.work-title {
 		font-size: 3.05rem;
 	}
 }
+
 @media (max-width : 523px) {
 	html {
 		font-size: 8px;
 	}
+
 	.container {
 		max-width: 431px;
 		margin-left: 34px;
@@ -683,12 +711,15 @@ header {
 	header.header-image {
 		background-position: center bottom 0px;
 	}
+
 	.header-content {
 		padding-top: 0px;
 	}
-	.header-text  {
+
+	.header-text {
 		font-size: 1.5rem;
 	}
+
 	.work-text-item {
 		font-size: 1.1rem;
 		font-weight: 600;
@@ -698,6 +729,7 @@ header {
 	.logo-img-light {
 		max-width: 4.1rem;
 	}
+
 	.button-company {
 		font-size: 7px;
 		margin-bottom: -3rem;
@@ -708,28 +740,40 @@ header {
 		padding-left: 0.4rem;
 		font-size: 6px;
 	}
+
 	.header-nav {
 		padding-left: 0.4rem;
 	}
+
 	.block-phone {
 		margin-right: 0.5rem;
 	}
+
 	.header-title {
 		font-size: 3.2rem;
 	}
+
 	.work-title {
 		font-size: 2.85rem;
 	}
+
 	.header-privileges {
 		margin-top: 7.6625rem;
 	}
+
 	.header-priveleges-item {
 		padding: 0.2rem 0.8rem;
 	}
+
 	.header-priveleges-text {
 		margin-top: -0.625rem;
 	}
+
+	.work-number-item {
+		font-size: 2.8rem;
+	}
 }
+
 @media (max-width : 493px) {
 	html {
 		font-size: 8px;
@@ -749,23 +793,119 @@ header {
 		display: none;
 	}
 
+	.mobail-menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		overflow-y: auto;
+		padding-top: 40px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.mobail-menu-nav {
+		list-style: none;
+		padding: 0;
+	}
+
+	.mobail-nav-item {
+		margin-bottom: 1.875rem;
+	}
+
+	.mobail-menu-link {
+		font-family: 'Noto Sans';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		color: black;
+		text-decoration: none;
+	}
+
+	.mobail-submenu-nav {
+		list-style: none;
+		padding-top: 1.25rem;
+		padding-left: 2.1875rem;
+	}
+
+	.mobail-submenu-item {
+		padding-top: .625rem;
+	}
+
+	.mobail-submenu-link {
+		font-family: 'Noto Sans';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		text-decoration: none;
+		color: #828A99;
+	}
+
+	.phone-link {
+		display: block;
+		font-family: 'Noto Sans';
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		color: #292D33;
+		border-top: 1px solid #EBEBF0;
+		padding-top: 1.875rem;
+	}
+
+	.info-block-email,
+	.info-block-phone {
+		margin-top: 21px;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.info-phone {
+		font-family: 'Noto Sans';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		color: #292D33;
+	}
+	
+	.info-mail {
+		font-family: 'Noto Sans';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		text-decoration: none;
+		color: #292D33;
+	}
+	.mobail-menu.menu-open {
+		display: block;
+	}
+
 	.logo-link {
 		padding: 2rem;
 		flex-grow: 1;
 		justify-content: center;
 	}
+
 	.logo-img-light {
 		max-width: 7rem;
 	}
-	
+
 	.button-company {
 		font-size: 7px;
 		margin-bottom: -3rem;
 		margin-top: 16px;
 	}
+
 	.header-privileges {
 		margin-top: 4.6625rem;
 	}
+
 	.mobail-menu-toggle {
 		display: flex;
 		align-items: flex-start;
@@ -775,39 +915,51 @@ header {
 		height: 100%;
 		border-right: 1px solid rgba(235, 235, 240, 0.20);
 		padding: 1.5rem 3.5rem;
-	} 
+	}
 
-	 .mobail-menu-line {
+
+	.mobail-menu-line {
 		height: 1px;
 		background-color: #fff;
 		width: 100%;
 	}
+
 	.mobail-menu-line:nth-child(2) {
 		width: 80%;
 	}
+
 	.button-getConsulting {
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
+
 	.button-getConsulting .icon-button-phone {
 		display: block;
 		fill: #FFFFFF;
 		width: 18px;
 		height: 18px;
 	}
+
 	.button-getConsulting .button-text {
 		display: none;
 	}
+
 	.section .container {
 		max-width: 396px;
 		margin-left: 34px;
 		margin-right: 34px;
 	}
+
 	.steps-item {
 		max-width: 11rem;
 	}
+
 	.work-title-item {
 		font-size: 1.55em;
+	}
+
+	.work-number-item {
+		font-size: 2.7rem;
 	}
 }
 
@@ -815,15 +967,27 @@ header {
 	html {
 		font-size: 8px;
 	}
-	
+
+	.container {
+		max-width: 390px;
+		margin-left: 22px;
+		margin-right: 30px;
+	}
+
+	.section {
+		margin-top: 6.375rem;
+	}
+
 	.section .container {
 		max-width: 369px;
 		margin-left: 28px;
 		margin-right: 34px;
 	}
+
 	.work-item {
 		gap: 1.9345rem;
 	}
+
 	.steps-item {
 		max-width: 10rem;
 	}
@@ -831,20 +995,31 @@ header {
 	.work-text-item {
 		font-size: 8px;
 	}
+
 	.work-number-item {
-		margin-bottom: -1rem
+		margin-bottom: -1rem;
+		font-size: 2.4rem;
 	}
+
 	.work-title-item {
 		font-size: 1.35rem;
 
 	}
 }
+
 @media (max-width : 400px) {
 	html {
 		font-size: 8px;
 	}
-	.section  {
-		margin-top: 6.25rem;
+
+	.container {
+		max-width: 354px;
+		margin-left: 15px;
+		margin-right: 30px;
+	}
+
+	.section {
+		margin-top: 5.25rem;
 	}
 
 	.section .container {
@@ -852,29 +1027,37 @@ header {
 		margin-left: 20px;
 		margin-right: 34px;
 	}
+
 	.work-item {
 		gap: 1.9345rem;
 		margin-top: 0rem;
 	}
+
 	.steps-item {
 		max-width: 10rem;
 	}
+
 	.work-title {
 		font-size: 2.55rem;
 		margin-top: 1.25rem;
 		margin-bottom: 1.875rem;
-	}	
+	}
+
 	.work-text-item {
 		font-size: 8px;
 	}
+
 	.work-number-item {
 		/* margin-bottom: -1rem */
 	}
+
 	.work-title-item {
 		font-size: 1.35rem;
 		margin-top: .625rem;
 	}
 }
+
+
 
 
 
