@@ -411,10 +411,10 @@ header {
 	.header-nav {
 		padding-left: 1rem;
 	}
-
+/* 
 	.header-priveleges-item {
 		padding: 1rem 0.8rem;
-	}
+	} */
 
 	.nav-item:not(:last-child) {
 		margin-right: 1rem;
@@ -629,7 +629,7 @@ header {
 	}
 
 	.header-title {
-		font-size: 3.5rem;
+		font-size: 4.5rem;
 	}
 }
 
@@ -689,7 +689,7 @@ header {
 	}
 
 	.header-title {
-		font-size: 3.2rem;
+		font-size: 4.2rem;
 	}
 
 	.work-title {
@@ -703,7 +703,7 @@ header {
 	}
 
 	.container {
-		max-width: 431px;
+		max-width: 90%;
 		margin-left: 34px;
 		margin-right: 34px;
 	}
@@ -750,28 +750,19 @@ header {
 	}
 
 	.header-title {
-		font-size: 3.2rem;
+		font-size: 4.2rem;
 	}
-
 	.work-title {
 		font-size: 2.85rem;
-	}
-
-	.header-privileges {
-		margin-top: 7.6625rem;
-	}
-
-	.header-priveleges-item {
-		padding: 0.2rem 0.8rem;
-	}
-
-	.header-priveleges-text {
-		margin-top: -0.625rem;
 	}
 
 	.work-number-item {
 		font-size: 2.8rem;
 	}
+
+	/* .header-priveleges-item {
+		padding: 0rem 0.1rem;
+	} */
 }
 
 @media (max-width : 493px) {
@@ -780,7 +771,7 @@ header {
 	}
 
 	.container {
-		max-width: 431px;
+		max-width: 90%;
 		margin-left: 34px;
 		margin-right: 34px;
 	}
@@ -804,7 +795,7 @@ header {
 		height: 100%;
 		background-color: #fff;
 		overflow-y: auto;
-		padding-top: 40px;
+		padding-top: 50px;
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -815,7 +806,7 @@ header {
 	}
 
 	.mobail-nav-item {
-		margin-bottom: 1.875rem;
+		margin-bottom: 3.875rem;
 	}
 
 	.mobail-menu-link {
@@ -854,11 +845,10 @@ header {
 		font-weight: 600;
 		color: #292D33;
 		border-top: 1px solid #EBEBF0;
-		padding-top: 1.875rem;
+		padding-top: 3.875rem;
 	}
 
-	.info-block-email,
-	.info-block-phone {
+	.info-block-mark-geo {
 		margin-top: 21px;
 		display: flex;
 		align-items: center;
@@ -866,7 +856,14 @@ header {
 		margin-bottom: 1.5rem;
 	}
 
-	.info-phone {
+	.info-block-email {
+		margin-bottom: 1.3125rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.info-mark-geo {
 		font-family: 'Noto Sans';
 		font-size: 14px;
 		font-style: normal;
@@ -882,8 +879,17 @@ header {
 		text-decoration: none;
 		color: #292D33;
 	}
-	.mobail-menu.menu-open {
+	.icon-vk {
+		margin-right: .9375rem;
+	}
+
+	.is-open {
 		display: block;
+	}
+	
+	.noScroll {
+		overflow: hidden !important; 
+		height: 100% !important;
 	}
 
 	.logo-link {
@@ -893,7 +899,7 @@ header {
 	}
 
 	.logo-img-light {
-		max-width: 7rem;
+		max-width: 10rem;
 	}
 
 	.button-company {
@@ -908,7 +914,6 @@ header {
 
 	.mobail-menu-toggle {
 		display: flex;
-		align-items: flex-start;
 		justify-content: space-between;
 		flex-direction: column;
 		width: 80px;
@@ -916,18 +921,29 @@ header {
 		border-right: 1px solid rgba(235, 235, 240, 0.20);
 		padding: 1.5rem 3.5rem;
 	}
-
-
 	.mobail-menu-line {
 		height: 1px;
 		background-color: #fff;
 		width: 100%;
+		transition: transform 0.2s;
 	}
 
 	.mobail-menu-line:nth-child(2) {
 		width: 80%;
 	}
 
+	.close-menu .mobail-menu-line:nth-child(2) {
+		display: none;
+	}
+	.close-menu .mobail-menu-line:nth-child(1) {
+		transform: rotate(45deg) translateY(10px);
+		padding: 0rem 1.9rem;
+	}
+	.close-menu .mobail-menu-line:nth-child(3) {
+		transform: rotate(-45deg) translateY(-10px);
+		padding: 0rem 1.9rem;
+	}
+	
 	.button-getConsulting {
 		padding-right: 2rem;
 		padding-left: 2rem;
@@ -945,9 +961,8 @@ header {
 	}
 
 	.section .container {
-		max-width: 396px;
-		margin-left: 34px;
-		margin-right: 34px;
+		max-width: 90%;
+
 	}
 
 	.steps-item {
@@ -963,15 +978,14 @@ header {
 	}
 }
 
+
 @media (max-width : 437px) {
 	html {
 		font-size: 8px;
 	}
 
 	.container {
-		max-width: 390px;
-		margin-left: 22px;
-		margin-right: 30px;
+		max-width: 90%;
 	}
 
 	.section {
@@ -980,8 +994,6 @@ header {
 
 	.section .container {
 		max-width: 369px;
-		margin-left: 28px;
-		margin-right: 34px;
 	}
 
 	.work-item {
@@ -1005,6 +1017,10 @@ header {
 		font-size: 1.35rem;
 
 	}
+	.header-title {
+		font-size: 5rem;
+    padding-right: 42px
+	}
 }
 
 @media (max-width : 400px) {
@@ -1013,9 +1029,7 @@ header {
 	}
 
 	.container {
-		max-width: 354px;
-		margin-left: 15px;
-		margin-right: 30px;
+		max-width: 90%;
 	}
 
 	.section {
@@ -1023,9 +1037,7 @@ header {
 	}
 
 	.section .container {
-		max-width: 338px;
-		margin-left: 20px;
-		margin-right: 34px;
+		max-width: 90%;
 	}
 
 	.work-item {
@@ -1046,16 +1058,16 @@ header {
 	.work-text-item {
 		font-size: 8px;
 	}
-
-	.work-number-item {
-		/* margin-bottom: -1rem */
-	}
-
+	
 	.work-title-item {
 		font-size: 1.35rem;
 		margin-top: .625rem;
 	}
 }
+
+
+
+
 
 
 
