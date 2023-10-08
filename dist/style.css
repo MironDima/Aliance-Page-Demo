@@ -187,7 +187,7 @@ header {
 
 .header-privileges {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	position: relative;
 	padding: 0rem;
 	min-height: 10.5rem;
@@ -198,6 +198,7 @@ header {
 	border: .0625rem solid rgba(235, 235, 240, 0.20);
 	list-style: none;
 	padding: 1.3125rem 3.1875rem;
+	/* min-width: 100%; */
 	width: 18rem;
 }
 
@@ -411,10 +412,6 @@ header {
 	.header-nav {
 		padding-left: 1rem;
 	}
-/* 
-	.header-priveleges-item {
-		padding: 1rem 0.8rem;
-	} */
 
 	.nav-item:not(:last-child) {
 		margin-right: 1rem;
@@ -760,9 +757,6 @@ header {
 		font-size: 2.8rem;
 	}
 
-	/* .header-priveleges-item {
-		padding: 0rem 0.1rem;
-	} */
 }
 
 @media (max-width : 493px) {

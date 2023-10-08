@@ -1,8 +1,7 @@
 import menuToggle from "./modules/menuToggle";
-import {navbar} from "./modules/navbar";
+import { navbar } from "./modules/navbar";
+import {slider} from "./modules/slider";
 
- navbar()
- menuToggle()
-
-
- console.dir(document.body)
+navbar()
+menuToggle()
+slider()
