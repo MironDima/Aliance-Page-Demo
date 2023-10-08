@@ -1,11 +1,27 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 export const slider = () => {
 	const swiper = new Swiper('.swiper', {
-		loop: true,
-		slidesPerView: 4,
+		modules: [Navigation],
+		autoHeight: true,
+		slidesPerView: 1,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: ".slider-button-prev",
+			prevEl: ".slider-button-next",
+		  },
+		  breakpoints: {
+			576: {
+			  slidesPerView: 2,
+			},
+			768: {
+			  slidesPerView: 3,
+			},
+			1024: {
+			  slidesPerView: 4,
+			},
+			1146: {
+				slidesPerView: 5,
+				
+			  },
 		  },
 	});
 }
