@@ -76,6 +76,10 @@ header {
 	align-items: center;
 }
 
+.logo-img-black {
+	display: none;
+}
+
 .header-nav {
 	flex-basis: 90%;
 	display: flex;
@@ -129,8 +133,6 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
-
 
 .icon-button-phone {
 	display: none;
@@ -186,6 +188,7 @@ header {
 	padding: 0rem;
 	min-height: 10.5rem;
 	margin-top: 2.5625rem;
+	height: 8.75rem;
 }
 
 .header-priveleges-item {
@@ -193,6 +196,7 @@ header {
 	list-style: none;
 	padding: 1.3125rem 3.1875rem;
 	width: 18rem;
+	height: 100%;
 }
 
 .header-priveleges-text {
@@ -340,6 +344,10 @@ header {
 		max-width: 8rem;
 	}
 
+	.logo-img-black {
+		max-width: 8rem;
+	}
+
 	.header-content {
 		padding-top: 114px;
 	}
@@ -348,7 +356,6 @@ header {
 @media (max-width : 1471px) {
 	html {
 		font-size: 12px;
-
 	}
 
 	.container {
@@ -372,7 +379,9 @@ header {
 	.logo-img-light {
 		max-width: 6rem;
 	}
-
+	.logo-img-black {
+		max-width: 6rem;
+	}
 	.header-nav {
 		padding-left: 2rem;
 	}
@@ -422,7 +431,7 @@ header {
 		margin-right: 1rem;
 	}
 
-	/* .icon-clock {
+	.icon-clock {
 		max-width: 3.0rem;
 	}
 
@@ -440,7 +449,7 @@ header {
 
 	.icon-speed {
 		max-width: 3.0rem;
-	} */
+	}
 
 }
 
@@ -474,7 +483,9 @@ header {
 	.logo-img-light {
 		max-width: 5rem;
 	}
-
+	.logo-img-black {
+		max-width: 5rem;
+	}
 	.button-getConsulting {
 		padding-right: 1rem;
 		padding-left: 1rem;
@@ -491,9 +502,11 @@ header {
 	.nav-item:not(:last-child) {
 		margin-right: 0.5rem;
 	}
+
 	.slider-button {
 		display: flex;
 	}
+
 	/* .icon-clock {
 		max-width: 2.5rem;
 	}
@@ -541,7 +554,9 @@ header {
 	.logo-img-light {
 		max-width: 4.5rem;
 	}
-
+	.logo-img-black {
+		max-width: 4.5rem;
+	}
 	.header-nav {
 		padding-left: 0.6rem;
 	}
@@ -642,7 +657,9 @@ header {
 	.logo-img-light {
 		max-width: 4.1rem;
 	}
-
+	.logo-img-black {
+		max-width: 4.1rem;
+	}
 	.button-company {
 		font-size: 7px;
 	}
@@ -702,7 +719,9 @@ header {
 	.logo-img-light {
 		max-width: 4.1rem;
 	}
-
+	.logo-img-black {
+		max-width: 4.1rem;
+	}
 	.button-company {
 		font-size: 7px;
 		margin-bottom: -3rem;
@@ -745,6 +764,10 @@ header {
 		max-width: 90%;
 	}
 
+	.section {
+		width: 90%;
+	}
+	
 	header.header-image {
 		background-position: center bottom 0px;
 	}
@@ -866,16 +889,18 @@ header {
 	.logo-img-light {
 		max-width: 10rem;
 	}
-
+	.logo-img-black {
+		max-width: 10rem;
+	}
 	.button-company {
 		font-size: 7px;
 		margin-bottom: -3rem;
 		margin-top: 16px;
 	}
 
-	/* .header-privileges {
+	.header-privileges {
 		margin-top: 4.6625rem;
-	} */
+	}
 
 	.mobail-menu-toggle {
 		display: flex;
@@ -928,6 +953,16 @@ header {
 		display: none;
 	}
 
+	.work-item {
+		list-style: none;
+		display: flex;
+		padding: 0;
+		gap: 0.875rem;
+	}
+	
+	.steps-item {
+		max-width: 13.625rem;
+	}
 }
 
 

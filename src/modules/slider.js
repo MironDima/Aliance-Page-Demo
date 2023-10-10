@@ -2,7 +2,9 @@ import Swiper, { Navigation } from 'swiper';
 export const slider = () => {
 	const swiper = new Swiper('.swiper', {
 		modules: [Navigation],
-		autoHeight: true,
+		// autoHeight: true,
+		loop:true,
+		speed:400,
 		slidesPerView: 1,
 		navigation: {
 			nextEl: ".slider-button-prev",

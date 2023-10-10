@@ -1,8 +1,10 @@
 export function changeColorLight() {
 	const mobailMenuLine = document.querySelectorAll('.mobail-menu-line');
-	const svgLogo = document.querySelector('.logo-img-light>use');
+	const svgLogoLight = document.querySelector('.logo-img-light');
+	const svgLogoBlack = document.querySelector('.logo-img-black');
 
-	svgLogo.href.baseVal = 'img/iconSprite.svg#logo-light';
+	svgLogoBlack.style.display = 'none';
+	svgLogoLight.style.display = 'block';
 	mobailMenuLine.forEach((mobailMenuLineItem) => {
 		mobailMenuLineItem.style.backgroundColor = '';
 	})
