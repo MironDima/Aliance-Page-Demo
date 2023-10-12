@@ -1,8 +1,7 @@
 import Swiper, { Navigation } from 'swiper';
 export const slider = () => {
-	const swiper = new Swiper('.swiper', {
+	const swiper = new Swiper('.swiperPrivileges', {
 		modules: [Navigation],
-		// autoHeight: true,
 		loop:true,
 		speed:400,
 		slidesPerView: 1,
@@ -11,7 +10,7 @@ export const slider = () => {
 			prevEl: ".slider-button-next",
 		  },
 		  breakpoints: {
-			576: {
+			606: {
 			  slidesPerView: 2,
 			},
 			768: {
