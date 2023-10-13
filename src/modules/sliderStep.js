@@ -9,6 +9,7 @@ export const sliderStep = () => {
 			nextEl: '.sliderStep-button-next',
 			prevEl: '.sliderStep-button-prev',
 		},
+		
 		breakpoints: {
 			430: {
 				slidesPerView: 2,

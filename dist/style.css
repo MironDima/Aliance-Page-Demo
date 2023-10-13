@@ -188,7 +188,7 @@ header {
 	padding: 0rem;
 	min-height: 10.5rem;
 	margin-top: 2.5625rem;
-	height: 8.75rem;
+	/* height: 8.75rem; */
 }
 
 .header-priveleges-item {
@@ -196,7 +196,7 @@ header {
 	list-style: none;
 	padding: 1.3125rem 3.1875rem;
 	width: 18rem;
-	height: 100%;
+	height: auto;
 }
 
 .header-priveleges-text {
@@ -327,9 +327,24 @@ header {
 	background: #5C8EE5;
 	width: 60px;
 	height: 40px;
-
+	cursor: pointer;
 }
 
+.block-prodaction {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.prodaction-item {
+	flex-basis: 33%;
+	border: 1px solid #EBEBF0;
+}
+.prodaction-content {
+	padding: 2.5rem 3.125rem;
+}
+.prodaction-image {
+	max-width: 100%;
+}
 @media (max-width : 1920px) {
 	.container {
 		max-width: 1424px;
@@ -703,7 +718,7 @@ header {
 }
 
 @media (max-width : 576px) {
-	.slider-step-button  {
+	.slider-step-button {
 		display: flex;
 	}
 }
