@@ -357,17 +357,25 @@ header {
 
 .slider-step-button {
 	display: none;
+
+}
+
+.slider-expert-button {
+	display: flex;
+}
+
+.primary-buttons-wrapper {
 	height: 40px;
 	justify-content: end;
 }
 
-.sliderStep-button-prev,
-.sliderStep-button-next {
+.primary-button-prev,
+.primary-button-next {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #5C8EE5;
-	width: 60px;
+	width: 80px;
 	height: 40px;
 	cursor: pointer;
 }
@@ -553,13 +561,16 @@ header {
 	font-style: normal;
 	font-weight: 400;
 }
+
 .clients-wrapper {
 	display: flex;
 	gap: 3.125rem;
 }
+
 .client-content {
 	flex-basis: 50%;
 }
+
 .separation-clients {
 	width: 9.375rem;
 	height: 0.225rem;
@@ -593,11 +604,13 @@ header {
 	font-weight: 400;
 	line-height: 160%;
 }
+
 .client-logo-list {
 	display: flex;
 	flex-wrap: wrap;
 	flex-shrink: 10;
 }
+
 .clients-item {
 	border: 1px solid #EBEBF0;
 	flex-basis: 33%;
@@ -608,14 +621,120 @@ header {
 	filter: grayscale(100%);
 	transition: filter 0.2s;
 }
+
 .clients-item:hover {
 	filter: grayscale(0%);
 }
+
 .clients-logo-img {
 	max-width: 100%;
 	width: 4.375rem;
 	height: 4.375rem;
 }
+
+.separation-experts {
+	width: 9.375rem;
+	height: 0.225rem;
+	background: #5C8EE5;
+	margin-top: 3.3625rem;
+}
+
+.experts-title {
+	color: #292D33;
+	font-family: "Bebas Neue Regular";
+	font-size: 3.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.expert-items {
+	display: flex;
+}
+
+.expert-item {
+	display: flex;
+	position: relative;
+	min-height: 25rem;
+	text-decoration: none;
+	flex-direction: column;
+	justify-content: end;
+	color: #FFF;
+	padding: 3.125rem;
+}
+
+.expert-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(41, 45, 51, 0.60);
+	z-index: -1;
+}
+
+.expert-photo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
+.expert-title {
+	color: #FFF;
+	font-family: "Noto Sans";
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%;
+	margin-bottom: 0.625rem;
+
+}
+
+.expert-text {
+	color: #FFF;
+	font-family: Noto Sans;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%;
+	margin: 0;
+}
+
+.expert-link {
+	display: flex;
+	align-items: center;
+	color: #5C8EE5;
+	font-family: 'Noto Sans';
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.expert-link::before {
+	content: '';
+	width: 2.5rem;
+	height: .0625rem;
+	background: #5C8EE5;
+	margin-right: 1.25rem;
+	transition: width 0.3s;
+}
+
+.expert-link:hover::before {
+	width: 3.75rem;
+}
+
+.expert-button-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1.875rem;
+}
+
 @media (max-width : 1920px) {
 	.container {
 		max-width: 1424px;
@@ -811,6 +930,11 @@ header {
 		display: flex;
 	}
 
+	.primary-button-prev,
+	.primary-button-next {
+		width: 60px;
+	}
+
 	.trade-mark-card {
 		grid-template-columns: auto auto;
 	}
@@ -882,6 +1006,7 @@ header {
 	.trade-mark-cards {
 		flex-direction: column;
 	}
+
 	.clients-wrapper {
 		flex-direction: column;
 	}
@@ -1006,6 +1131,11 @@ header {
 @media (max-width : 576px) {
 	.slider-step-button {
 		display: flex;
+	}
+	.primary-button-prev,
+	.primary-button-next {
+		width: 60px;
+		height: 40px;
 	}
 
 	.trade-mark-card {
@@ -1363,15 +1493,17 @@ header {
 	.button-link {
 		font-size: 14px;
 	}
+
 	.cliets-list {
 		columns: 1 auto;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.clients-item {
 		flex-basis: 50%;
 	}
-	
+
 }
 
 
